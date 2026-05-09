@@ -1,0 +1,5 @@
+Login should accept valid username and password.
+Login should reject invalid passwords.
+Password reset should send a secure link to registered users.
+API responses should include useful status codes.
+

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-qa-assistant
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ai-qa-assistant
+  template:
+    metadata:
+      labels:
+        app: ai-qa-assistant
+    spec:
+      containers:
+        - name: backend
+          image: ai-qa-assistant:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+

@@ -1,0 +1,6 @@
+Login should allow valid users to access the dashboard.
+Login should reject invalid passwords with a clear error.
+Password reset should send a secure reset link to registered email addresses.
+API endpoints should return meaningful status codes and validation messages.
+Sensitive data should not be logged or exposed in API responses.
+
