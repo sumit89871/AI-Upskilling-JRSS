@@ -1,4 +1,4 @@
-# AI Engineer JRSS Reskilling Course
+# AI-Upskilling-JRSS
 
 This repository is a beginner-to-interview-ready self-study course for the target role:
 
@@ -127,4 +127,3 @@ Whenever code appears, the course explains:
 - Learn local-only execution before cloud or production deployment.
 - Keep projects Git-ready from the beginning.
 - Treat every error message as debugging practice.
-
