@@ -8,9 +8,9 @@ What is the difference between Git and GitHub?
 
 Options:
 
-A. Git is version control; GitHub is a cloud platform for hosting Git repositories  
-B. GitHub is a Python package; Git is a web browser  
-C. They are exactly the same  
+A. Git is version control; GitHub is a cloud platform for hosting Git repositories
+B. GitHub is a Python package; Git is a web browser
+C. They are exactly the same
 D. Git is only for Docker
 
 Correct answer:
@@ -33,9 +33,9 @@ What does `git add .` do?
 
 Options:
 
-A. Stages changed files in the current folder and subfolders  
-B. Creates a remote repository  
-C. Deletes untracked files  
+A. Stages changed files in the current folder and subfolders
+B. Creates a remote repository
+C. Deletes untracked files
 D. Commits changes permanently
 
 Correct answer:
@@ -58,9 +58,9 @@ What does `-m` mean in `git commit -m "Add API"`?
 
 Options:
 
-A. Message  
-B. Merge  
-C. Move  
+A. Message
+B. Merge
+C. Move
 D. Model
 
 Correct answer:
@@ -83,9 +83,9 @@ What is a Docker image?
 
 Options:
 
-A. A packaged template used to create containers  
-B. A running process only  
-C. A Kubernetes node  
+A. A packaged template used to create containers
+B. A running process only
+C. A Kubernetes node
 D. A Git branch
 
 Correct answer:
@@ -108,9 +108,9 @@ What is a Docker container?
 
 Options:
 
-A. A running instance of an image  
-B. A text file only  
-C. A Git commit  
+A. A running instance of an image
+B. A text file only
+C. A Git commit
 D. A Kubernetes YAML key
 
 Correct answer:
@@ -133,9 +133,9 @@ What is a Dockerfile?
 
 Options:
 
-A. A recipe for building a Docker image  
-B. A running container  
-C. A Python virtual environment  
+A. A recipe for building a Docker image
+B. A running container
+C. A Python virtual environment
 D. A Kubernetes cluster
 
 Correct answer:
@@ -158,9 +158,9 @@ What does `8000:8000` usually mean in Docker run port mapping?
 
 Options:
 
-A. Host port 8000 maps to container port 8000  
-B. Delete port 8000  
-C. Create two containers  
+A. Host port 8000 maps to container port 8000
+B. Delete port 8000
+C. Create two containers
 D. Install FastAPI
 
 Correct answer:
@@ -183,9 +183,9 @@ What is a Kubernetes pod?
 
 Options:
 
-A. The smallest deployable unit in Kubernetes, usually running one or more containers  
-B. A Docker image registry  
-C. A Git repository  
+A. The smallest deployable unit in Kubernetes, usually running one or more containers
+B. A Docker image registry
+C. A Git repository
 D. A Python class
 
 Correct answer:
@@ -208,9 +208,9 @@ What does a Kubernetes Deployment manage?
 
 Options:
 
-A. Desired number and rollout of pods  
-B. Python package installation  
-C. Git staging area  
+A. Desired number and rollout of pods
+B. Python package installation
+C. Git staging area
 D. Local virtual environment
 
 Correct answer:
@@ -233,9 +233,9 @@ What is a Kubernetes Service used for?
 
 Options:
 
-A. Stable network access to pods  
-B. Writing Python functions  
-C. Building Docker images only  
+A. Stable network access to pods
+B. Writing Python functions
+C. Building Docker images only
 D. Creating Git branches
 
 Correct answer:
@@ -258,9 +258,9 @@ Which Kubernetes object should store non-sensitive configuration?
 
 Options:
 
-A. ConfigMap  
-B. Secret  
-C. Pod only  
+A. ConfigMap
+B. Secret
+C. Pod only
 D. Namespace only
 
 Correct answer:
@@ -283,9 +283,9 @@ What is `kubectl logs` used for?
 
 Options:
 
-A. Viewing logs from a pod/container  
-B. Building Docker image  
-C. Creating Git commit  
+A. Viewing logs from a pod/container
+B. Building Docker image
+C. Creating Git commit
 D. Running Python tests
 
 Correct answer:
@@ -299,3 +299,59 @@ Logs help debug what happened inside running workloads.
 Common trap:
 
 Checking only YAML when the real error is visible in pod logs.
+
+## Podman MCQs
+
+## MCQ: Podman awareness
+
+Question:
+
+Which statement best describes Podman?
+
+Options:
+
+A. A container tool that can build and run containers with command patterns similar to Docker
+B. A Python testing library
+C. A Git branch type
+D. A prompt engineering pattern
+
+Correct answer:
+
+A. A container tool that can build and run containers with command patterns similar to Docker
+
+Explanation:
+
+Podman is relevant because some enterprise environments use it for container workflows. For beginner readiness, connect it to familiar container concepts: image, container, build, run, ports, environment variables, and logs.
+
+Why other options are wrong:
+
+B belongs to Python testing. C belongs to Git. D belongs to GenAI prompting.
+
+Common trap:
+
+Thinking Podman is Kubernetes. Kubernetes orchestrates workloads; Podman runs containers.
+
+## MCQ: Docker vs Podman command shape
+
+Question:
+
+Which Podman command is closest in meaning to `docker run -p 8000:8000 app-name`?
+
+Options:
+
+A. `podman run -p 8000:8000 app-name`
+B. `git run -p 8000:8000 app-name`
+C. `kubectl build app-name`
+D. `python -m pod app-name`
+
+Correct answer:
+
+A. `podman run -p 8000:8000 app-name`
+
+Explanation:
+
+The command starts a container and maps host port `8000` to container port `8000`, using Podman instead of Docker.
+
+Common trap:
+
+Forgetting that the first port is the host port and the second port is the container port.

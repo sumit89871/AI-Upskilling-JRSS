@@ -515,3 +515,56 @@ Docker appears in:
 - final POC deployment readiness
 - Kubernetes deployment preparation
 - interview questions about repeatable environments
+
+## 15. Podman Awareness
+
+Podman is a container tool that can build and run containers in a way that is similar to Docker.
+
+Beginner meaning:
+
+```text
+Docker and Podman both help run containerized applications.
+```
+
+Why Podman appears in enterprise discussions:
+
+Some organizations prefer Podman because it can run without a long-running Docker daemon and supports rootless container workflows on Linux. The exact choice depends on enterprise standards, security policies, and platform team guidance.
+
+Docker vs Podman:
+
+| Concept | Docker | Podman |
+|---|---|---|
+| Main use | Build and run containers | Build and run containers |
+| Beginner command shape | `docker build`, `docker run` | `podman build`, `podman run` |
+| Enterprise discussion | Very common local/dev tool | Common in some Linux/enterprise setups |
+| What to know for exam | Image, container, Dockerfile, ports | Docker-compatible container awareness |
+
+Example awareness commands:
+
+```powershell
+podman build -t fastapi-app .
+podman run -p 8000:8000 fastapi-app
+```
+
+Command breakdown:
+
+- `podman` runs the Podman command-line tool.
+- `build` creates a container image from the current folder.
+- `-t fastapi-app` gives the image a readable name.
+- `.` means the current folder is the build context.
+- `run` starts a container from an image.
+- `-p 8000:8000` maps host port `8000` to container port `8000`.
+
+Expected output:
+
+The exact output depends on Podman installation, but successful build/run should look conceptually similar to Docker: image build logs first, then app startup logs when the container runs.
+
+What to say in an interview:
+
+```text
+I have practiced Docker commands directly. I understand Podman as a Docker-compatible container tool often used in Linux or enterprise environments. The same core concepts apply: image, container, build, run, port mapping, environment variables, and logs.
+```
+
+Common mistake:
+
+Claiming deep Podman production experience if you have only used Docker. Say what you know honestly and connect it to the shared container concepts.

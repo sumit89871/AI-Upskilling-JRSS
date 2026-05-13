@@ -65,3 +65,51 @@ Common wrong answer:
 When to say this in interview:
 
 Use when asked about multi-agent systems.
+
+## Question: What is A2A in agentic AI?
+
+Short answer:
+
+A2A means agent-to-agent communication, where one agent can ask another agent for help or hand off part of a task.
+
+Expanded answer:
+
+In a multi-agent system, different agents may have different responsibilities. For example, one agent analyzes a requirement, another generates test cases, and another reviews quality. A2A describes the communication or handoff between those agents. The important beginner idea is that A2A should be controlled and traceable, not random uncontrolled chatting between agents.
+
+Project example:
+
+In the final QA assistant POC, a future version could let a Requirement Analyst Agent hand off API-related work to an API Test Agent, then send the result to a Reviewer Agent.
+
+Common wrong answer:
+
+"A2A is the same as MCP."
+
+Why wrong:
+
+MCP connects AI systems to tools, resources, and prompts. A2A is about communication between agents.
+
+When to say this in interview:
+
+Use this when asked about multi-agent systems, agent handoff, enterprise agent collaboration, or terms from the reskilling PPT.
+
+## Question: What is the difference between supervisor pattern and A2A?
+
+Short answer:
+
+Supervisor pattern uses one controller to route work. A2A focuses on agents communicating or handing work to each other.
+
+Expanded answer:
+
+A supervisor pattern is easier to debug because one component decides which agent acts next. A2A can be more flexible, but it needs stronger control, logging, and responsibility boundaries. For beginner POCs, supervisor-style orchestration is usually simpler and safer to explain.
+
+Project example:
+
+The POC can use a LangGraph-style supervisor flow: understand query, retrieve context, generate answer, review response. A later enterprise version could add A2A between specialist agents.
+
+Common wrong answer:
+
+"Supervisor and A2A are identical because both use multiple agents."
+
+When to say this in interview:
+
+Use this when explaining why your POC uses a controlled workflow instead of fully autonomous multi-agent communication.

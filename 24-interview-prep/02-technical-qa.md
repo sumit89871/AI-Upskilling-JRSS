@@ -507,3 +507,139 @@ Common wrong answer:
 When to say this in interview:
 
 Use when asked about agentic AI or multi-agent systems.
+
+### Question: What is A2A?
+
+Short answer:
+
+A2A means agent-to-agent communication.
+
+Expanded explanation:
+
+In a multi-agent system, one agent may ask another agent for help, hand off a specialized task, or receive a structured result from another agent. A2A should be controlled and logged in enterprise systems because uncontrolled agent communication can become hard to debug.
+
+Real project example:
+
+In a larger version of the QA assistant POC, a Requirement Analyst Agent could ask an API Test Agent for API test ideas, then pass the result to a Reviewer Agent.
+
+Common wrong answer:
+
+"A2A is the same as MCP."
+
+When to say this in interview:
+
+Use when the interviewer asks about multi-agent systems, agent collaboration, or PPT-specific agentic AI terms.
+
+### Question: What is the difference between MCP and A2A?
+
+Short answer:
+
+MCP connects AI clients to tools/resources/prompts. A2A is communication between agents.
+
+Expanded explanation:
+
+An agent may use MCP to call a test data tool. The same agent may use A2A to ask another specialist agent to review generated test cases. MCP is tool integration. A2A is agent collaboration.
+
+Real project example:
+
+The POC uses MCP-style tools for controlled test data lookup. A future multi-agent version could add A2A between analyst, generator, and reviewer agents.
+
+Common wrong answer:
+
+"Both are just APIs."
+
+When to say this in interview:
+
+Use when asked to compare terms from agentic AI architecture.
+
+## Podman Q&A
+
+### Question: What is Podman?
+
+Short answer:
+
+Podman is a container tool that can build and run containers with command patterns similar to Docker.
+
+Expanded explanation:
+
+Docker and Podman share key beginner concepts: image, container, build, run, port mapping, environment variables, and logs. Podman is often discussed in Linux or enterprise environments. If you practiced Docker, explain that Podman knowledge transfers at the concept level, while exact operational details depend on the environment.
+
+Real project example:
+
+A FastAPI POC with a Dockerfile could be built with `podman build -t qa-assistant .` and run with `podman run -p 8000:8000 qa-assistant` in a Podman-based setup.
+
+Common wrong answer:
+
+"Podman is the same as Kubernetes."
+
+When to say this in interview:
+
+Use when deployment tools from the reskilling plan are mentioned.
+
+## IBM Ecosystem Awareness Q&A
+
+### Question: What is IBM BOB?
+
+Short answer:
+
+IBM BOB is mentioned in the reskilling material as an IBM ecosystem item. Exact details should be validated from official IBM resources.
+
+Expanded explanation:
+
+Do not invent internal functionality if you have not been given official documentation or tool access. A safe answer is to acknowledge the term, explain that it belongs to the IBM enablement/platform context, and connect your readiness to the broader engineering skills: integration, governance, RAG, tools, APIs, and POC delivery.
+
+Real project example:
+
+My course POC does not claim IBM BOB integration. It demonstrates transferable AI Engineer skills: FastAPI integration, Pydantic validation, RAG-style grounding, MCP-style tool usage, LangGraph-style workflow, Docker awareness, and demo explanation.
+
+Common wrong answer:
+
+"IBM BOB definitely has these features..." without official source.
+
+When to say this in interview:
+
+Use if asked about internal IBM ecosystem terms from the PPT.
+
+### Question: What is Agent Studio or Agentic Studio?
+
+Short answer:
+
+It is enterprise agent tooling awareness for building or configuring agentic AI workflows.
+
+Expanded explanation:
+
+At beginner/interview level, connect it to concepts you understand: agent workflows, tools, prompts, state, governance, and deployment. Avoid claiming exact internal product details unless you have used official resources.
+
+Real project example:
+
+My POC simulates the core engineering ideas with FastAPI, RAG, MCP-style tools, LangGraph-style stateful flow, and Streamlit UI.
+
+Common wrong answer:
+
+"Agent Studio means only prompt writing."
+
+When to say this in interview:
+
+Use when asked how enterprise tools relate to your local POC.
+
+### Question: How should you discuss IBM credentials or badges?
+
+Short answer:
+
+Claim only credentials you completed. If still preparing, say you are preparing.
+
+Expanded explanation:
+
+Credential awareness means you understand the expected learning path and topics. It does not mean you should overclaim completion. You can say you are preparing for watsonx, GenAI, Agentic AI, hyperscaler AI, or ISV AI expectations and can demonstrate the underlying technical skills.
+
+Real project example:
+
+I can say: "I am preparing through this AI Engineer course and POC. The project demonstrates APIs, RAG, tool usage, agents, deployment awareness, and enterprise constraints."
+
+Common wrong answer:
+
+"I am certified" without having completed the badge or credential.
+
+When to say this in interview:
+
+Use if the interviewer asks about badges, credentials, or certification status.

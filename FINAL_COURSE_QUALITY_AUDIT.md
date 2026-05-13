@@ -43,6 +43,19 @@ Remaining note:
 
 Some awareness modules are now usable but still intentionally concise compared with the strongest deep-dive modules. If the goal is maximum consistency, continue expanding `14`, `15`, `18`, `19`, and `20` with more examples and scenario questions.
 
+## 2026-05-14 PPT Gap Closure Update
+
+The organization PPT-specific gaps from `QUALITY_GAP_REPORT.md` were addressed:
+
+- `A2A` added to module `14` plus Mettl and interview prep.
+- `Podman` added to module `16` plus Mettl and interview prep.
+- `IBM BOB`, `Agent Studio / Agentic Studio`, and credential-safe wording added to module `21` plus Mettl and interview prep.
+- `26-practice-tracker` was improved with a more actionable 7-day crash plan and exam-specific watchlist.
+
+Updated readiness judgment:
+
+The course is now suitable for beginner self-study for the main technical track and the known PPT-specific awareness terms. Remaining work is polish and more practice volume, not missing core coverage.
+
 ## Executive Summary
 
 The course is partially ready for beginner self-study.

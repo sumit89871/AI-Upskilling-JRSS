@@ -76,6 +76,21 @@ Common traps:
 - app runs in container but port is not mapped
 - expecting container changes to persist without volume
 
+## Podman
+
+Remember:
+
+- Podman is a container tool similar in command shape to Docker.
+- Common awareness commands are `podman build -t app-name .` and `podman run -p 8000:8000 app-name`.
+- Enterprises may use Podman in Linux/container environments.
+- For beginner interviews, connect Podman to shared container concepts: image, container, build, run, port mapping, logs.
+
+Common traps:
+
+- saying Podman is Kubernetes
+- claiming deep Podman experience if you only practiced Docker
+- forgetting that `8000:8000` means host port to container port
+
 ## Kubernetes
 
 Remember:
@@ -189,6 +204,24 @@ Common traps:
 - node vs Kubernetes node
 - state vs local variable
 - checkpoint vs final answer
+
+## A2A and Enterprise Agent Awareness
+
+Remember:
+
+- A2A means agent-to-agent communication.
+- A2A is not the same as MCP.
+- MCP connects AI systems to tools/resources/prompts.
+- Supervisor pattern uses a controller to route work between agents.
+- Agent Studio / Agentic Studio should be discussed as enterprise agent tooling awareness unless you have official details.
+- IBM BOB is a program/PPT-specific IBM ecosystem term; do not invent internal details.
+- Claim only credentials or badges you have actually completed.
+
+Safe interview wording:
+
+```text
+I understand this as part of the enterprise AI ecosystem from the program material. I would validate exact internal usage from official IBM resources and avoid guessing.
+```
 
 ## Final screening mindset
 

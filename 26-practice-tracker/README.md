@@ -69,3 +69,40 @@ It ensures you are not only reading notes but also becoming ready for:
 - POC demo
 - technical interview discussion
 - stand-and-deliver explanation
+
+## 8. Completion rule
+
+Use this rule before marking any item complete:
+
+```text
+Read -> run or simulate -> explain -> answer questions -> connect to POC
+```
+
+Minimum evidence for completion:
+
+- You read the relevant note.
+- You ran the command or can explain why it is conceptual only.
+- You know the expected output.
+- You can explain one common mistake.
+- You can answer one interview-style question.
+- You can say where it appears in the final POC or AI Engineer work.
+
+## 9. Exam-specific watchlist
+
+Track these PPT-specific terms carefully:
+
+- Podman
+- A2A
+- IBM BOB
+- Agent Studio / Agentic Studio
+- IBM watsonx credentials
+- IBM Generative and Agentic AI badge preparation
+- hyperscaler or ISV AI credential awareness
+
+Self-check:
+
+```text
+Can I explain this safely without inventing internal details?
+Can I connect it to the AI Engineer role?
+Can I say what I have practiced directly and what is only awareness-level?
+```

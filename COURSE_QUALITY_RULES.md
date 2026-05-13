@@ -503,3 +503,32 @@ Before marking any file complete, verify:
 - Cheatsheets are compact but still meaningful.
 - Similar concepts are compared where confusion is likely.
 - The note explains how the topic appears in AI Engineer work, Mettl screening, POC demo, or interview discussion.
+
+## 16. Organization Material Coverage Rule
+
+When organization-provided material such as a PPT, lab guide, screening outline, or badge roadmap is available, the course must be checked against it explicitly.
+
+For every term listed in the organization material, the course should contain at least one of these:
+
+- a beginner-friendly concept note
+- an awareness-level explanation if the term is platform-specific
+- an MCQ or screening question
+- an interview answer
+- a POC/demo talking point
+
+Do not invent internal platform details, private links, or confidential behavior. If a term is mentioned but not publicly explained, teach it as controlled awareness:
+
+```text
+This term appears in the provided program material. Explain only the safe known meaning, connect it to the broader AI Engineer role, and say you would validate exact internal usage from official organization resources.
+```
+
+This rule matters for terms such as:
+
+- IBM BOB
+- Agent Studio / Agentic Studio
+- IBM watsonx credentials
+- hyperscaler or ISV AI credentials
+- A2A
+- Podman
+
+The learner should know what to say honestly if asked. Awareness-level coverage is acceptable for internal or tool-specific items when exact details are not available.

@@ -1,6 +1,6 @@
 # Quality Gap Report
 
-Last updated: 2026-05-09
+Last updated: 2026-05-14
 
 Scope: Existing `ai-engineer-jrss-reskilling-course/` repository only.
 
@@ -10,7 +10,23 @@ Important status:
 
 - This report has been updated after multiple module refinements.
 - It now includes the organization-provided PPTX review from `style_reference/AI Engineer - Reskilling Plan.pptx`.
-- It does not rewrite module notes.
+- 2026-05-14 update: PPT-specific gaps were addressed in the course modules listed below.
+- This report is now both a historical gap log and a current follow-up tracker.
+
+## 0. 2026-05-14 Gap Closure Update
+
+The following missing PPT-specific topics were added:
+
+- `A2A` was added to `14-agents-multi-agent-systems/00-overview.md`, `01-agent-patterns.md`, and `interview-questions.md`.
+- `Podman` was added to `16-docker-basics/00-overview.md`, `cheatsheet.md`, and `interview-questions.md`.
+- `IBM BOB`, `Agent Studio / Agentic Studio`, and credential-safe wording were added to `21-ibm-ai-engineer-awareness/00-overview.md` and `interview-questions.md`.
+- Mettl-style MCQs for `A2A`, `Agentic Studio`, `IBM BOB`, credential-safe wording, and `Podman` were added to `23-mettl-screening-prep/`.
+- Interview answers for `A2A`, `MCP vs A2A`, `Podman`, `IBM BOB`, `Agent Studio / Agentic Studio`, and credentials were added to `24-interview-prep/02-technical-qa.md`.
+- `26-practice-tracker/7-day-crash-plan.md` and `README.md` were expanded with expected outputs, self-checks, and PPT-specific watchlist items.
+
+Current judgment after this update:
+
+The major PPT-specific gaps are now covered at awareness or beginner-learning level. The remaining work is consistency polish, more practice volume, and optional hands-on depth for tools that may be installation-heavy.
 
 ## 1. Reference Files Checked
 
@@ -144,7 +160,7 @@ Partially covered:
 - IBM enterprise awareness is present, but needs direct exam-style answers for IBM BOB, certifications, and enterprise tools.
 - agents/multi-agent systems are usable, but can still be deepened with more scenario examples.
 
-Not covered or clear PPTX gap:
+Previously missing PPTX gaps now addressed:
 
 - Podman
 - IBM BOB
@@ -162,7 +178,7 @@ The PPTX says Agentic AI deployments may use Podman, Docker, or Kubernetes.
 
 Current course status:
 
-Docker and Kubernetes are covered. Podman is not covered.
+Addressed on 2026-05-14 in `16-docker-basics/`.
 
 Recommended fix:
 
@@ -194,7 +210,7 @@ The PPTX explicitly mentions IBM BOB.
 
 Current course status:
 
-No coverage found.
+Addressed on 2026-05-14 in `21-ibm-ai-engineer-awareness/` and `24-interview-prep/`.
 
 Recommended fix:
 
@@ -225,7 +241,7 @@ The PPTX lists Agents, MCP, Multi-Agent Systems, and A2A.
 
 Current course status:
 
-A2A is not covered.
+Addressed on 2026-05-14 in `14-agents-multi-agent-systems/`, `23-mettl-screening-prep/`, and `24-interview-prep/`.
 
 Recommended fix:
 
@@ -257,7 +273,7 @@ The PPTX mentions "Agentic studio" while course search shows `Agent Studio`.
 
 Current course status:
 
-Agent Studio is mentioned. Agentic Studio exact wording is not covered.
+Addressed on 2026-05-14 in `21-ibm-ai-engineer-awareness/`, `23-mettl-screening-prep/`, and `24-interview-prep/`.
 
 Recommended fix:
 
@@ -287,7 +303,7 @@ PPTX mentions:
 
 Current course status:
 
-Certification awareness exists but should be expanded with "how to talk about it" and "what not to claim."
+Addressed on 2026-05-14 with safe interview wording and MCQs.
 
 Recommended fix:
 
@@ -313,7 +329,7 @@ These are still useful but lower priority than the PPTX gaps.
 
 Current status:
 
-Still compact.
+Improved on 2026-05-14, especially `README.md` and `7-day-crash-plan.md`. Other plan/checklist files can still be expanded later.
 
 Recommended fix:
 
@@ -331,7 +347,7 @@ Expand plans/checklists with:
 
 Current status:
 
-Needs the most PPT-specific expansion.
+PPT-specific terms were added on 2026-05-14. It can still be expanded later with more scenario-based enterprise constraints.
 
 Recommended fix:
 
@@ -378,7 +394,7 @@ Add:
 
 Current status:
 
-Usable, but needs A2A and more scenarios.
+Improved on 2026-05-14 with A2A, handoff, and interview coverage. More scenario practice can still be added later.
 
 Recommended fix:
 
@@ -393,14 +409,11 @@ Add:
 
 Use this exact order:
 
-1. Update `21-ibm-ai-engineer-awareness/` for IBM BOB, Agentic Studio naming, watsonx/certification wording, and what-to-say interview answers.
-2. Update `14-agents-multi-agent-systems/` for A2A, agent handoff, supervisor vs A2A, and scenario questions.
-3. Update `16-docker-basics/` or `21-ibm-ai-engineer-awareness/` with Podman awareness and Podman vs Docker.
-4. Update `24-interview-prep/` with PPT-specific interview answers for IBM BOB, A2A, Podman, Agentic Studio, certifications.
-5. Update `23-mettl-screening-prep/` with MCQs for Podman, A2A, IBM BOB awareness, Agentic Studio, and certification-safe wording.
-6. Expand `26-practice-tracker/` into actionable day-by-day readiness plans.
-7. Add more local model/Ollama/Hugging Face troubleshooting to `15-local-models-ollama-huggingface/`.
-8. Add deeper Streamlit UI practice to `18-streamlit-app-lab/`.
+1. Expand remaining `26-practice-tracker/` plan/checklist files beyond the README and 7-day plan.
+2. Add more local model/Ollama/Hugging Face troubleshooting to `15-local-models-ollama-huggingface/`.
+3. Add deeper Streamlit UI practice to `18-streamlit-app-lab/`.
+4. Add more timed Mettl mixed quizzes in `23-mettl-screening-prep/`.
+5. Add more POC troubleshooting scenarios in `22-final-poc-project/`.
 
 ## 7. Exam Readiness Judgment
 
@@ -421,7 +434,7 @@ The course covers most of the PPTX exam/reskilling topics and is strong for the 
 - LangGraph
 - POC/interview preparation
 
-However, the course should not yet be considered fully PPT-complete because these PPT-specific terms are missing or under-covered:
+The course is now much closer to PPT-complete because the previously missing PPT-specific terms have been added:
 
 - Podman
 - IBM BOB
@@ -432,7 +445,7 @@ However, the course should not yet be considered fully PPT-complete because thes
 Beginner ability estimate:
 
 - A beginner can answer most technical screening questions from the course.
-- A beginner may struggle if the exam asks direct questions about Podman, IBM BOB, or A2A.
+- A beginner now has safe beginner-level answers for Podman, IBM BOB, A2A, Agentic Studio, and credentials.
 - A beginner may answer IBM platform questions only at broad awareness level unless module `21` is expanded further.
 
 ## 8. Do Not Do Automatically

@@ -228,3 +228,29 @@ docker logs <container_id>
 Common wrong answer:
 
 Assume Docker is broken without checking logs.
+
+## Question: What is Podman and how is it related to Docker?
+
+Short answer:
+
+Podman is a container tool that can build and run containers with command patterns similar to Docker.
+
+Expanded answer:
+
+Docker and Podman both use core container concepts: image, container, build, run, port mapping, environment variables, and logs. Docker is very common for local development. Podman is also used in some Linux and enterprise environments, often because of rootless container support and daemonless operation. For beginner AI Engineer readiness, the key is to understand the shared container model.
+
+Project example:
+
+If the FastAPI POC has a Dockerfile, a Podman-based environment may build it with `podman build -t qa-assistant .` and run it with `podman run -p 8000:8000 qa-assistant`.
+
+Common wrong answer:
+
+"Podman is Kubernetes."
+
+Why wrong:
+
+Podman runs containers. Kubernetes orchestrates containers across pods, deployments, and services.
+
+When to say this in interview:
+
+Use this if the interviewer asks about deployment tools from the reskilling PPT or asks how Docker knowledge transfers to Podman.

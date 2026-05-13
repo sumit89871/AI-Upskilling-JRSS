@@ -327,3 +327,53 @@ This removes Compose containers, not your source code.
 - Environment variable: runtime configuration value.
 - Volume: mounted shared/persistent file location.
 - Compose: YAML-based multi-service runner.
+
+## Podman Awareness
+
+Command:
+
+```powershell
+podman build -t app-name .
+```
+
+Meaning:
+
+Builds a container image using Podman. The command shape is similar to `docker build`.
+
+When to use:
+
+Use when an enterprise or Linux environment uses Podman instead of Docker.
+
+Example:
+
+```powershell
+podman build -t fastapi-app .
+```
+
+Be careful:
+
+Do not claim Podman and Docker are exactly the same internally. For beginner exam/interview purposes, connect them through shared concepts: image, container, build, run, port mapping, logs.
+
+Command:
+
+```powershell
+podman run -p 8000:8000 app-name
+```
+
+Meaning:
+
+Starts a container from an image and maps a host port to a container port.
+
+When to use:
+
+Use when running a containerized FastAPI or demo app in a Podman-based environment.
+
+Example:
+
+```powershell
+podman run -p 8000:8000 fastapi-app
+```
+
+Be careful:
+
+The first port is on your machine. The second port is inside the container, just like Docker port mapping.

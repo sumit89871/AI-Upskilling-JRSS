@@ -26,7 +26,7 @@ Agents matter when a workflow needs:
 
 ## What you should finish knowing
 
-You should understand LLM vs agent, tool-using agent, planner, executor, reviewer, supervisor, handoff, memory basics, multi-agent systems, and when not to use agents.
+You should understand LLM vs agent, tool-using agent, planner, executor, reviewer, supervisor, A2A agent-to-agent awareness, handoff, memory basics, multi-agent systems, and when not to use agents.
 
 ## Study order
 

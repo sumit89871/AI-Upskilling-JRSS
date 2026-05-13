@@ -73,6 +73,7 @@ After this module, you should understand:
 - environment variables
 - volumes
 - Docker Compose
+- Podman awareness
 - container logs
 - containerizing FastAPI
 - common Docker errors
@@ -141,6 +142,6 @@ Docker packages and runs your app. It does not design the app for you.
 ## 10. How This Helps In JRSS, Mettl, POC, And Interviews
 
 - JRSS labs: containerized apps are easier to run consistently.
-- Mettl: Docker questions often test image vs container, Dockerfile, build vs run, and port mapping.
+- Mettl: Docker questions often test image vs container, Dockerfile, build vs run, port mapping, and Podman awareness.
 - POC: Docker shows deployment readiness for the FastAPI backend.
 - Interview: you can explain how you package a FastAPI/RAG app for repeatable execution.
